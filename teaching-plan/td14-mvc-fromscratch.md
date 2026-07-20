@@ -27,3 +27,9 @@ New "bank" Maven project:
 - `execute()` must reject re-execution if the transaction's status isn't `SUBMITTED` (throw `IllegalStateException`)
 - Insufficient-funds case sets status to `REJECTED` without touching either account
 - Note box flags the object-relational mapping mismatch as a preview of later coursework on alternative persistence models
+
+## Homework exercises
+1. Add a customer-lookup feature: given an IBAN, find and display the owning `Customer` through the view.
+2. Add a `history()` feature listing all `Transaction`s for a given `Account`, oldest first.
+3. Write JUnit tests for `Transaction.execute()` covering insufficient funds, double-execution, and the success path.
+

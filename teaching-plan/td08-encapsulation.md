@@ -25,3 +25,9 @@ Encapsulation and argument-passing semantics.
 - **Attention**: all non-primitive types (including `String` and arrays) are reference types
 - Exercises deliberately show the surprising difference between mutating an object through its reference (visible to the caller) vs. reassigning the parameter itself (invisible to the caller)
 - A footnote flags `final` on a setter without fully explaining it yet — that's reserved for the inheritance TD
+
+## Homework exercises
+1. Add a `Board.getRow(int row)` method that returns a defensive copy of a row (a new array), not a live reference into `squares`.
+2. Write a method that takes a `List<Contact>` and removes its first entry; in a comment, explain why the caller's list is affected even though the parameter itself was "just passed in."
+3. Harden `Bag.draw(int n)`: throw `IllegalArgumentException` for `n <= 0`, and `IllegalStateException` if `n` exceeds what's left in the bag.
+

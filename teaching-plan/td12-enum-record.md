@@ -26,3 +26,9 @@
 - The enum constant list must end with `;` once custom members (constructor, methods) are added
 - `Day d3 = new Day();` is shown explicitly as an ERROR
 - Closing reflection exercise: reason about when to model something as an `enum` vs. a `record`
+
+## Homework exercises
+1. Add a method using the `Day` enum that returns a `List<Day>` containing only the working days of the week.
+2. Turn `Contact` (from TD02/TD03) into a `record`, and note in a comment what has to change given that records are immutable (e.g. `setPhone`).
+3. Add a `priceWithTax()` method to the `Product` record that computes a total from `price` plus a fixed tax rate.
+

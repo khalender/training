@@ -26,3 +26,9 @@ Closing exercise: create a parallel `Cat` class (`meow()` instead of `bark()`) b
 - Open the folder containing `pom.xml` as the project — not a wrong parent/child folder
 - Comment code with Javadoc as a professional habit from day one
 - IntelliJ's "no usages" hint is a useful signal, not noise — pay attention to it
+
+## Homework exercises
+1. Add a `Bird` class with a `fly()` method that prints a message, following the exact same pattern as `Dog`/`Cat`.
+2. Add Javadoc (`/** ... */`, `@author`) to `Dog` and `Cat`, then generate the HTML docs via Tools → Generate Javadoc and open the result in a browser.
+3. In `Main`, instantiate a `Dog`, a `Cat`, and your new `Bird`, and call each one's action twice in a row (plain repeated calls — no loops yet).
+

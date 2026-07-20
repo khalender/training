@@ -23,3 +23,9 @@ A single `View` interface (`makeTitle`, `makeSubTitle`, `makeItem`, `makeParagra
 - Implementing methods must be explicitly declared `public`, even though the interface doesn't restate it
 - Nested-list indentation must stay coherent when lists appear inside list items (HTMLView)
 - Once `BlockView extends View`, `HTMLView` no longer needs to separately declare `implements View`
+
+## Homework exercises
+1. Add a fourth `View` implementation, `MarkdownView`, using `#` headers and `-` bullets.
+2. Add a new method to the `View`/`BlockView` interfaces (e.g. `makeLink(String text, String url)`) and implement it across all existing views.
+3. Write a small `report(View view)` function that produces the same fixed content regardless of implementation, proving it works unchanged for all four views.
+

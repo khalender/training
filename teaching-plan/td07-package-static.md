@@ -24,3 +24,9 @@ Revisiting packages and the `static` keyword.
 - Reserve public/package-visible attributes for rare cases — default to `private`
 - Uppercase dictionary words when validating user input (`toUpperCase()`) to match the dictionary format
 - Test example code directly rather than assuming it works
+
+## Homework exercises
+1. Move `Dog`/`Cat` into a package named after your student number, and fix the resulting imports across the project.
+2. Add a `MathUtil`-style utility with `static` constants for Scrabble letter values and a `static` method that scores a word.
+3. Add a `static` counter attribute to `Dog` (`nDogsCreated`), incremented in the constructor, with a `static` getter.
+

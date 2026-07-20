@@ -22,3 +22,9 @@ Using the IntelliJ debugger.
 ## Gotchas / things to watch for
 - `System.out.println` debugging is explicitly discouraged as slower and messier than using the debugger
 - The `isPalindrome` exercise is intentionally buggy — the point is to trace it live, find the misplaced control flow, fix it, and then look for performance improvements once it's correct
+
+## Homework exercises
+1. Step through `Dog.run()` with the debugger across several calls and watch the `hungry`/`injured` fields flip; write down what you observe at each step.
+2. Introduce a deliberate off-by-one bug into `Phonebook.display()`'s loop and use breakpoints to locate and fix it.
+3. Set a conditional breakpoint inside `Bag.draw()` that only triggers when the bag is empty, then step through the resulting exception.
+

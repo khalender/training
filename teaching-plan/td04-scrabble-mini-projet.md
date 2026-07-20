@@ -30,3 +30,9 @@ A mini-mini Scrabble game:
 - `String.split(" ")` breaks on multiple/mixed whitespace — use `"\\s+"` instead
 - `Integer.parseInt` throws if the string isn't a valid number (foreshadows TD15)
 - Known limitations left in place on purpose: no crossing words, no dictionary check, no undo — good discussion points for "what's still missing"
+
+## Homework exercises
+1. Extract the chevalet (rack) handling currently inline in `App`/the game loop into its own `Rack` class with `add`, `remove`, and `display` methods.
+2. Add a `Board.isEmpty(int row, int col)` helper and use it inside `setLetters` instead of the inline `null` check.
+3. Add a `Bag.remaining()` method that prints how many tiles of each letter are still left in the bag (group and count by character).
+

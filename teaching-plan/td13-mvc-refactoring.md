@@ -27,3 +27,9 @@ Final exercise: swap in a classmate's `View` implementation by changing only one
 - The model must never expose its internal `board`/`rack` collections directly — it returns a single `Letter` via `get(row, col)` and an unmodifiable list for the rack (encapsulation)
 - Commit and tag in git *before* starting the refactor, as a safety net
 - Word-validation responsibility is explicitly moved out of `Board` and into `Model` — a concrete example of separation of concerns
+
+## Homework exercises
+1. Add a second `View` implementation (reusing one from TD11) into the Scrabble MVC app and swap it in by changing only one `import` line.
+2. Extract the optional TD04 score-keeping logic into `Model`, exposing only a `getScore()` accessor to the view/controller.
+3. Write a JUnit test (TD05 skills) for `Model` that requires no console I/O, demonstrating that the MVC split makes the model easy to test in isolation.
+

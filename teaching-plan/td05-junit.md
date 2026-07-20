@@ -25,3 +25,9 @@ Also: `MyDate`/`isLenient()` (leap year logic) used as a small TDD demo, plus re
 - "Error in the test class" box: when a test fails, check the *test code* first, then the implementation
 - Test boundary/limit values deliberately — common bugs live in `<` vs `<=`, AND vs OR mix-ups, off-by-one loop errors, and a missing `this` in a constructor/setter
 - Exercise on simplifying boolean logic (removing double negatives) without breaking any existing test — tests as a safety net for refactoring
+
+## Homework exercises
+1. Write JUnit tests for `Dog.bark(int nbRepeat)` covering `0`, a negative value, and a valid positive value.
+2. Write a test plan (input/expected/notes table) and matching JUnit tests for `Phonebook`, covering 0, 1, and several contacts.
+3. Deliberately introduce a bug into `Board.setLetters` (change a `<` to `<=`), then write the test that catches it before fixing the bug.
+

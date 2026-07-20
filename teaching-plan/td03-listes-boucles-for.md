@@ -27,3 +27,9 @@ New example: `Phonebook` holding a `List<Contact>`, with `add(Contact c)` and `d
 - A crashing program is often *more* useful than one that silently prints a warning — exceptions make problems visible immediately
 - Picking the right exception type matters: state-related → `IllegalStateException`; bad argument → `IllegalArgumentException`
 - Don't forget the required `import` for `List`/`ArrayList` (IntelliJ can auto-add it)
+
+## Homework exercises
+1. Add a `run(int laps)` overload to `Dog` that calls `run()` in a loop, matching the `bark(int)` pattern.
+2. Add a `size()` method to `Phonebook` returning the number of contacts, and a `remove(Contact c)` method.
+3. Validate `Contact`'s phone number in the constructor: throw `IllegalArgumentException` if it's negative or has fewer than 4 digits.
+

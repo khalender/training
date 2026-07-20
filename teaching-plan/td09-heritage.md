@@ -24,3 +24,9 @@ Inheritance as a fundamental OO concept.
 - `==` vs. `.equals()` differ for objects with identical attributes *until* `equals` is overridden
 - Casting to `Animal` inside `equals(Object o)` is necessary to access subclass-specific fields safely
 - Exercises explicitly probe encapsulation/inheritance interaction: "what happens if you remove Dog's constructor?" and "what if Animal's attributes become private?"
+
+## Homework exercises
+1. Create an `Animal` superclass for `Dog`/`Cat`/`Bird` (from TD01) with a shared `name` attribute, moving the noise-making method up where it makes sense.
+2. Override `equals()`/`hashCode()` on `Contact` and manually verify: do two contacts with identical data satisfy `.equals()`? Do they satisfy `==`?
+3. Add a `Puppy extends Dog` class that overrides `bark()` to print a smaller sound, calling `super.bark()` as part of its own implementation.
+

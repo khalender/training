@@ -21,3 +21,9 @@ Treating different classes' objects as objects of a common parent type.
 - Casting a child instance *up* to its parent type is implicit; casting a parent instance *down* to a child type needs an explicit cast and can fail at runtime — exercise explicitly asks "why" for both directions
 - `medor.bark()` fails to compile when `medor` is declared as type `Animal`, even though the runtime object is a `Dog` — calling a subtype-only method on a supertype reference doesn't compile
 - `toString()` dispatch uses the actual *runtime* class, not the declared type — this is polymorphism in action
+
+## Homework exercises
+1. Add a `PetStore.countByType()` method that loops over `List<Animal>` and counts dogs vs. cats using `instanceof`.
+2. Write a `feedAll(List<Animal> animals)` method that calls a common feeding method polymorphically across all animals.
+3. Deliberately trigger a `ClassCastException`: cast an `Animal` you know is a `Cat` down to `Dog`, catch the exception, and print its message.
+

@@ -25,3 +25,9 @@ New example: `Contact` class (name, firstName, address, phone as `int`) with a c
 - Adding a custom constructor removes the implicit default no-arg constructor — this can break other code that relied on it (use IntelliJ's Find panel to locate the fallout)
 - IntelliJ's constructor-generation dialog isn't always the right call — think about which attributes should actually be constructor parameters vs. defaulted
 - Type-checking errors are caught at compile time (e.g. passing an `int` where a `String` is expected)
+
+## Homework exercises
+1. Add a `breed` (race) attribute to `Dog`, wire it into the constructor, and print it as part of `bark()`.
+2. Add a `Book` class (`title`, `author`, `numberOfPages`) with a constructor and getters, following the same pattern as `Contact`.
+3. Add an `age` attribute to `Contact` with a hand-written getter, then use IntelliJ's Generate menu to add a matching setter.
+
