@@ -1,1 +1,7 @@
 raw-notes/
+
+target/
+*.class
+.idea/
+*.iml
+.vscode/
