@@ -47,6 +47,16 @@ public class Dog {
         }
     }
 
+    /** Overload of {@link #run()}: run several times in a row. */
+    public void run(int nbRepeat) {
+        if (nbRepeat <= 0) {
+            throw new IllegalArgumentException("nbRepeat doit être strictement positif");
+        }
+        for (int i = 0; i < nbRepeat; i++) {
+            this.run();
+        }
+    }
+
     public void eat() {
         if (!this.hungry) {
             throw new IllegalStateException(this.name + " n'a pas faim !");

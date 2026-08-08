@@ -22,8 +22,12 @@ public class Board {
 
     /** Places {@code letters} in a row starting at (row, col), one square per letter. */
     public void setLetters(int row, int col, Direction direction, Letter[] letters) {
+        if (letters.length == 0) {
+            return;
+        }
         int endRow = direction == Direction.VERTICAL ? row + letters.length - 1 : row;
         int endCol = direction == Direction.HORIZONTAL ? col + letters.length - 1 : col;
+        checkBounds(row, col);
         checkBounds(endRow, endCol);
 
         for (int i = 0; i < letters.length; i++) {

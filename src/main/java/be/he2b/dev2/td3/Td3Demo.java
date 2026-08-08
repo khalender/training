@@ -26,10 +26,21 @@ public final class Td3Demo {
         }
         medor.eat();
 
-        Phonebook annuaire = new Phonebook();
-        annuaire.add(new Contact("Albert", "Einstein", "rue d'Ailleurs", 12345));
-        annuaire.add(new Contact("Mahatma", "Gandhi", "rue d'Autre Part", 54321));
-        annuaire.add(new Contact("Nelson", "Mandela", "Avenue l'eau de là", 123321));
-        annuaire.display();
+        Phonebook mustafaPhoneBook = new Phonebook();
+        mustafaPhoneBook.add(new Contact("Albert", "Einstein", "rue d'Ailleurs", 12345));
+        mustafaPhoneBook.add(new Contact("Mahatma", "Gandhi", "rue d'Autre Part", 54321));
+        mustafaPhoneBook.add(new Contact("Nelson", "Mandela", "Avenue l'eau de là", 123321));
+        mustafaPhoneBook.display();
+
+        for(int i = 0 ; i < mustafaPhoneBook.getContacts().size(); i++){
+            System.out.println(i);
+            System.out.println(mustafaPhoneBook.getContacts().get(i).getFullName());
+        }
+
+        for(Contact contact : mustafaPhoneBook.getContacts()){
+            System.out.println(contact.getFullName());
+        }
+
+        mustafaPhoneBook.getContacts().forEach(x -> System.out.println(x.getFullName()));
     }
 }
